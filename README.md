@@ -2,7 +2,7 @@
 
 <i>CodePath Assignment</i>
 
-This assignments task was to recreate some of the behaviors of the Dropbox app.
+This assignments task was to recreate some of the behaviors of the Carousel app.
 
 Time spent: 15 hours in total
 
