@@ -7,30 +7,32 @@ This assignments task was to recreate some of the behaviors of the Dropbox app.
 Time spent: 15 hours in total
 
 <b>Completed user stories:</b>
-<ul>
-<li>User can tap through the 3 welcome screens.</li>
-<li>User can follow the create user flow.
 
-<ul>
-<li>On the create user form, the user can tap the back button to go to the page where they can sign in or create an account.</li>
-<li>Before creating the account, user can choose to read the terms of service.</li>
-<li>After creating the account, user can view the placeholders for Files, Photos, and Favorites as well as the Settings screen.</li>
-<li>User can log out from the Settings screen.</li>
-</ul></li>
-<li>User can follow the sign in flow.
-
-<ul>
-<li>User can tap the area for "Having trouble signing in?"</li>
-<li>User can log out from the Settings screen.</li>
-</ul></li>
-<li>Optional: Add a detail view for one of the files and implement favoriting the file. <a href="https://guides.codepath.com/ios/Configure-a-Button">Configure a Button</a></li>
-<li>Optional: Add UITextFields for the forms so you can actually type in them and handle dismissing the keyboard. <a href="https://guides.codepath.com/ios/Registering-for-Keyboard-Events#step-6-move-uitextfield-back-when-keyboard-is-hidden">Dismissing the Keyboard</a></li>
-<li><b>(Personal additions)</b>: To be able to create account, all the textfields have to be filled and write a strong password (meaning more than 4 characters). To be able to sign in, all textfields have to be filled.</li>
-
-</ul>
-<li>Optional: You should be able to swipe through the welcome screens instead of just tapping them.
-</li>
-</ul>
+- Static photo tiles on the initial screen
+ - Optional: Photo tiles move with scrolling
+- Sign In
+ - Tapping on email/password reveals the keyboard and shifts the scrollview and Sign In button up.
+ - Upon tapping the Sign In button.
+  <ul>
+ - If the username or password fields are empty, user sees an error alert.
+  - If credentials are incorrect, user sees a loading indicator for 2 seconds followed by an error alert.
+  - If the credentials are correct, user sees a loading indicator for 2 seconds followed by a transition to the Sign In screens.
+ </ul>
+ - Optional: When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard.
+ - Optional: On appear, scale the form up and fade it in.
+- Tutorial Screens
+ - User can page between the screens
+ - Optional: User can page between the screens with updated dots
+ - Optional: Upon reaching the 4th page, hide the dots and show the "Take Carousel for a Spin" button.
+- Image Timeline
+ - Display a scrollable view of images.
+ - User can tap on the conversations button to see the conversations screen (push).
+ - User can tap on the profile image to see the settings view (modal from below).
+- Conversations
+ - User can dismiss the conversations screen
+- Settings
+ - User can dismiss the settings screen.
+ - User can log out
 
  
  
